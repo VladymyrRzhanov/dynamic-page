@@ -1,0 +1,50 @@
+.body-style {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  /* background-image: url("../images/morning.jpeg"); */
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+#time {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: rgb(240 255 240);
+}
+
+#greeting,
+#name {
+  font-size: 3rem;
+}
+
+@media (max-width: 700px) {
+  #time {
+    font-size: 6rem;
+  }
+}
