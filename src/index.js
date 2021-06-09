@@ -3,6 +3,7 @@ const time = document.querySelector('#time');
 const greeting = document.querySelector('#greeting');
 const name = document.querySelector('#name');
 const focus = document.querySelector('#focus');
+const bodyRef = document.querySelector('.body-style')
 
 const showAmPm = true;
 
@@ -29,13 +30,13 @@ function setBgGreet() {
     hour = today.getHours();
     
     if (hour < 12) {
-        document.body.style.backgroundImage = "url('./images/morning.jpg')";
+        bodyRef.classList.add('morning');
         greeting.textContent = 'Доброго ранку!';
     } else if (hour < 18) {
-        document.body.style.backgroundImage = "url('./images/afternoon.jpg')";
+        bodyRef.classList.add('afternoon');
         greeting.textContent = 'Добрий день!';
     } else {
-        document.body.style.backgroundImage = "url('./images/evening.jpg')";
+        bodyRef.classList.add('evening');
         greeting.textContent = 'Добрий вечір!';
         document.body.style.color = 'white'
     };
